@@ -28,7 +28,6 @@ if (!isset($_SESSION["user"])) {
 
 </style>
 
-
 <body>
 <?php require_once('header.php');?>
     <br />
