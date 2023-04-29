@@ -1,0 +1,63 @@
+
+.button {
+    left: 0px;
+    color: white;
+    right: 0px;
+    width: 203px;
+    bottom: 20px;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    font-size: 35px;
+    align-self: flex-end;
+    font-style: ExtraBold;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 800;
+    padding-top: .5 rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5 rem;
+    vertical-align: middle;
+    background-color: black;
+}
+
+.h3 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 35px;
+    font-style: Bold;
+    font-family: Poppins;
+    font-weight: 700;
+    font-stretch: normal;
+    
+    }
+
+label{
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-style: Medium;
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.title {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 12px;
+    padding: 8px;
+    font-size: 20px;
+    align-self: auto;
+    font-style: Medium;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: rgba(175, 175, 175, 0.55);
+}
+
+.margin {
+    margin-bottom: 50px;
+}

@@ -1,0 +1,349 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fddc6a;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 8%;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+}
+
+img {
+  margin: 0px 10px;
+}
+
+button  {
+  background: #fddc6a;
+  border: solid 1px;
+  border-radius: 10px;
+  color: black;
+  padding: 5px 20px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+
+button:hover{
+  background-color: #f9b532;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: black;
+}
+
+header .navbar ul li a {
+  font-size: 15px;
+  padding: 10px 30px;
+  color: black;
+  display: block;
+  border-radius: 0px;
+}
+
+header .navbar ul li a:hover {
+  background: #f9b532;
+  color: white;
+  font-weight: 500;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  background: #fddc6a;
+  display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+  color: black;
+  background: #fddc6a;
+  border-color: black;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+.our-animals-pet-information-adoption-faqs {
+  margin-top: 730px;
+  left: -3px;
+  width: 1200px;
+  height: 299px;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  align-self: auto;
+  box-sizing: border-box;
+  align-items: flex-start;
+  flex-shrink: 1;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0;
+  border-radius: 0px 0px 0px 0px;
+  margin-bottom: 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+
+.our-animals-pet-information-rectangle26 {
+  top: 3px;
+  left: 0px;
+  width: 1443px;
+  height: 50px;
+  position: absolute;
+  border-color: transparent;
+  border-radius: 8px;
+}
+.our-animals-pet-information-container1 {
+  top: 73px;
+  left: 0px;
+  right: 0px;
+  width: 1104px;
+  height: 37.333335876464844px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.our-animals-pet-information-text {
+  top: 0px;
+  left: 0px;
+  color: rgba(0, 0, 0, 1);
+  width: 276px;
+  height: auto;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-text02 {
+  top: 0px;
+  left: 276px;
+  color: rgba(0, 0, 0, 1);
+  width: 276px;
+  height: auto;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-text04 {
+  top: 0px;
+  left: 552px;
+  color: rgba(0, 0, 0, 1);
+  width: 276px;
+  height: auto;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-text06 {
+  top: 0px;
+  color: rgba(0, 0, 0, 1);
+  right: 0px;
+  width: 276px;
+  height: auto;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 25px;
+  align-self: auto;
+  font-style: Bold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-text08 {
+  top: 128px;
+  left: 48px;
+  color: rgb(0, 0, 0);
+  width: 276px;
+  height: auto;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 18px;
+  align-self: auto;
+  font-style: normal;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-text09 {
+  top: 128px;
+  left: 324px;
+  color: rgb(0, 0, 0);
+  width: 276px;
+  height: auto;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 18px;
+  align-self: auto;
+  font-style: normal;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-text10 {
+  top: 128px;
+  left: 600px;
+  color: rgb(0, 0, 0);
+  width: 276px;
+  height: auto;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 18px;
+  align-self: auto;
+  font-style: normal;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-text11 {
+  top: 128px;
+  color: rgb(0, 0, 0);
+  right: 48px;
+  width: 276px;
+  height: auto;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 18px;
+  align-self: auto;
+  font-style: normal;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-text14 {
+  left: 152px;
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  position: absolute;
+  font-size: 35px;
+  align-self: auto;
+  font-style: SemiBold;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.our-animals-pet-information-search {
+  top: 8px;
+  left: 92px;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+}
+
+/* photo slider css 
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider {
+  flex: 0 0 calc(20% - 20px);
+  margin: 0 10px;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.slider-button-left {
+  left: 0;
+}
+
+.slider-button-right {
+  right: 0;
+}
+*/
+

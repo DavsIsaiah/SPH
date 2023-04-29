@@ -1,0 +1,165 @@
+.our-animals-pet-information-image {
+    top: 150px;
+    left: 70px;
+    width: 439px;
+    height: 459px;
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+}
+.our-animals-pet-information-form {
+    left: 600px;
+    width: 549px;
+    height: 640px;
+    display: flex;
+    position: absolute;
+}
+.our-animals-pet-information-container2 {
+    top: 95px;
+    left: 76px;
+    width: 410.3333435058594px;
+    height: 403.0000419616699px;
+    display: flex;
+    position: absolute;
+}
+.our-animals-pet-information-text34 {
+    top: 12px;
+    left: 0px;
+    position: absolute;
+}
+.our-animals-pet-information-text35 {
+    top: 67px;
+    left: 0px;
+    position: absolute;
+}
+.our-animals-pet-information-text36 {
+    top: 124px;
+    left: 0px;
+    position: absolute;
+}
+.our-animals-pet-information-text37 {
+    top: 186px;
+    left: 0px;
+    position: absolute;
+}
+.our-animals-pet-information-text38 {
+    left: 0px;
+    bottom: 134.6042079925537px;
+    position: absolute;
+}
+.our-animals-pet-information-text39 {
+    left: 0px;
+    bottom: 65.60420799255371px;
+    position: absolute;
+}
+.our-animals-pet-information-text40 {
+    left: 0px;
+    bottom: 1.604207992553711px;
+    position: absolute;
+}
+.our-animals-pet-information-textinput {
+    top: 0px;
+    left: 175px;
+    padding: 0.5rem;
+    position: absolute;
+}
+.our-animals-pet-information-textinput1 {
+    top: 63px;
+    left: 175px;
+    padding: 0.5rem;
+    position: absolute;
+}
+.our-animals-pet-information-textinput2 {
+    top: 121px;
+    left: 175px;
+    padding: 0.5rem;
+    position: absolute;
+}
+.our-animals-pet-information-textinput3 {
+    top: 180px;
+    left: 175px;
+    padding: 0.5rem;
+    position: absolute;
+}
+.our-animals-pet-information-textinput4 {
+    top: 239px;
+    left: 175px;
+    bottom: 126.2708740234375px;
+    padding: 0.5rem;
+    position: absolute;
+}
+.our-animals-pet-information-textinput5 {
+    left: 175px;
+    bottom: 62.2708740234375px;
+    padding: 0.5rem;
+    position: absolute;
+}
+.our-animals-pet-information-textinput6 {
+    left: 175px;
+    bottom: 0px;
+    padding: 0.5rem;
+    position: absolute;
+}
+.our-animals-pet-information-text41 {
+    top: var(--dl-space-space-unit);
+    left: 0px;
+    color: rgba(0, 0, 0, 1);
+    right: 0px;
+    height: auto;
+    margin: auto;
+    position: absolute;
+    font-size: 40px;
+    align-self: auto;
+    font-style: ExtraBold;
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.adopt-button {
+    top: 500px;
+    left: 0px;
+    color: white;
+    right: 0px;
+    width: 203px;
+    margin: auto;
+    position: absolute;
+    font-size: 35px;
+    align-self: flex-end;
+    /* font-weight: Bold; */
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 800;
+    padding-top: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5rem;
+    vertical-align: middle;
+    background-color: black;
+}
+
+.h2{
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    width: auto;
+    height: auto;
+    text-align: left;
+    line-height: 40px;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-family: Poppins;
+}
+
+@media (max-width: 768px) { 
+    .our-animals-pet-information-image {
+        min-width: 90%; 
+        max-width: 100%; 
+    }
+    }

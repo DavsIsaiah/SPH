@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fddc6a;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 0px 8%;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+}
+
+img {
+  margin: 0px 10px;
+}
+
+button {
+  background: #fddc6a;
+  border: solid 1px;
+  border-radius: 10px;
+  color: black;
+  padding: 5px 20px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+  margin-top: 12px;
+}
+
+button:hover {
+  background-color: #f9b532;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: black;
+}
+
+header .navbar ul li a {
+  font-size: 15px;
+  padding: 10px 30px;
+  color: black;
+  display: block;
+  border-radius: 0px;
+}
+
+header .navbar ul li a:hover {
+  background: #f9b532;
+  color: white;
+  font-weight: 500;
+}
+
+header .navbar ul li ul {
+  position: absolute;
+  left: 0;
+  width: 150px;
+  background: #fddc6a;
+  display: none;
+}
+
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.alert-success {
+  color: black;
+  background: #fddc6a;
+  border-color: black;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+/* This the style for volunteer.php title header */
+.title {
+text-align: center;
+ padding: 8px;
+
+}
+
+.title h1 {
+  color: black;
+  font-family: "Poppins", sans-serif; ;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+/* The caret animation */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+@media (max-width: 767px) {
+  .typing-animation {
+    font-size: 20px;
+    animation-duration: 2s;
+  }
+}
+
+/* This the style for volunteer.php volunteer form */
+.container .form_title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .form_title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 347px;
+  border-radius: 5px;
+  background: #fddc6a;
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #f9b532;
+}
+
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: #f9b532;
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: #fddc6a;
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 20%;
+}
+
+/* This is the style for myforms.php */
+
+/* This is the style for the table */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+ 
+}
+
+th {
+  background-color: #f9b532;
+  color: black;
+  height: 61px;
+}
+
+th,
+td {
+  padding: .8rem;
+  font-size: 1.4rem;
+}
+
+tbody {
+  background-color: #fddc6a;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  td {
+    display: block;
+    text-align: right;
+  }
+
+  td::before {
+    float: left;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  td:nth-of-type(1)::before {
+    content: "Adoption Date:";
+  }
+
+  td:nth-of-type(2)::before {
+    content: "Pet ID:";
+  }
+
+  td:nth-of-type(3)::before {
+    content: "Adopter's Name:";
+  }
+
+  td:nth-of-type(4)::before {
+    content: "Status:";
+  }
+
+  td:nth-of-type(5)::before {
+    content: "Actions:";
+  }
+}
+
+

@@ -1,0 +1,133 @@
+.cat-slider {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+
+  .cat-slider-item {
+    flex: 1 0 calc(5% - 20px); /* Adjust 20% to change the number of slides per row */
+    margin: 10px;
+  }
+
+  .cat-slider-container {
+  overflow: hidden;
+  }
+
+  .cat-slider-wrapper {
+      display: flex;
+  }
+
+  .cat-slider {
+      display: flex;
+      flex-wrap: nowrap;
+      transition: transform 0.5s ease;
+  }
+
+  .cat-slider-item {
+      margin-right: 20px;
+  }
+
+  .cat-slider-button {
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      margin-top: auto;
+      transform: translateY(-50%);
+      background-color: #dad8d6;
+      border: none;
+      font-size: 40px;
+      cursor: pointer;
+  }
+  
+  .cat-slider-button-left {
+      left: 0;
+  }
+
+  .cat-slider-button-right {
+      right: 0;
+  }
+
+  .slider-hover {
+      position: relative;
+  }
+
+  .slider-hover:hover .hover-overlay {
+      opacity: 1;
+      transform: translateY(0);
+  }
+
+  .hover-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.9);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      transform: translateY(-50%);
+  }
+
+  .name-tag {
+      background-color: black;
+      color: white;
+      padding: 3px 6px;
+      border-radius: 10px;
+      display: inline-block;
+      font-weight: bold;
+  } 
+
+  .dog-slider {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+  }
+
+  .dog-slider-item {
+    flex: 1 0 calc(5% - 20px); /* Adjust 20% to change the number of slides per row */
+    margin: 10px;
+  }
+
+  .dog-slider-container {
+  overflow: hidden;
+  }
+
+  .dog-slider-wrapper {
+      display: flex;
+  }
+
+  .dog-slider {
+      display: flex;
+      flex-wrap: nowrap;
+      transition: transform 0.5s ease;
+  }
+
+  .dog-slider-item {
+      margin-right: 20px;
+  }
+
+  .dog-slider-button {
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      margin-top: auto;
+      transform: translateY(-50%);
+      background-color: #dad8d6;
+      border: none;
+      font-size: 40px;
+      cursor: pointer;
+  }
+  
+  .dog-slider-button-left {
+      left: 0;
+  }
+
+  .dog-slider-button-right {
+      right: 0;
+  }
+
+ 
