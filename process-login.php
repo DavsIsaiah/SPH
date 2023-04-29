@@ -3,7 +3,7 @@ if (session_id() == "") {
     session_start();
 }
 require __DIR__ . '/vendor/autoload.php';
-include('Connection.php');
+include('connection.php');
 $ref_table = "cred";
 if (isset($_POST['submit'])) {
     $user = $_POST['user'];
