@@ -65,7 +65,9 @@ if (isset($_POST['submit'])) {
                     'url' => $url
                 ]; //this is the schema
                 $database->getReference($ref_table)->push($postData);
-                header("Location: animals_admin.php");
+                echo '<script>
+      window.location = "animals_admin.php";
+      </script>';
             } else {
                 print_r($errors);
             }

@@ -41,7 +41,6 @@ if ($fetch_data > 0) {
 
 $trim = str_replace("https://firebasestorage.googleapis.com/v0/b/safepetshaven.appspot.com/o/", "", "$url");
 $trim2 = str_replace("?alt=media", "", "$trim");
-echo $trim2;
 $bucket->object($trim2)->delete();
 
 echo '<script>
