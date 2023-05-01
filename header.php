@@ -1,3 +1,6 @@
+<?php
+error_reporting(0);
+?>
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="">
