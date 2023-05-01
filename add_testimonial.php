@@ -8,6 +8,7 @@ if (!isset($_SESSION["admin"])) {
     window.location = "Homepage.php";
     </script>';
 }
+error_reporting(0);
 // Include config file
 require __DIR__ . '/vendor/autoload.php';
 include('connection.php');

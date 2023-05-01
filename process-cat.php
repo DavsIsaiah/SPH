@@ -53,10 +53,10 @@ if (isset($_POST['submit'])) {
                 } else {
                     $pet_id = 1;
                 }
-
+                $age = $_POST['age'] . " " . $_POST['date'];
                 //pass to the firebase database.
                 $postData = [
-                    'age' => $_POST['age'],
+                    'age' => $age,
                     'breed' => $_POST['breed'],
                     'name' => $_POST['name'],
                     'pet_id' => $pet_id,
