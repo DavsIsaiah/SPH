@@ -8,7 +8,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #fddc6a;
+  background: #f0bdfc;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   padding: 0px 8%;
   justify-content: center;
@@ -21,7 +21,7 @@ img {
 }
 
 button {
-  background: #fddc6a;
+  background: #f0bdfc;
   border: solid 1px;
   border-radius: 10px;
   color: black;
@@ -36,7 +36,7 @@ button {
 }
 
 button:hover {
-  background-color: #f9b532;
+  background-color: #c499cf;
   color: white;
   border-radius: 10px;
   font-weight: 600;
@@ -55,7 +55,7 @@ header .navbar ul li a {
 }
 
 header .navbar ul li a:hover {
-  background: #f9b532;
+  background: #c499cf;
   color: white;
   font-weight: 500;
 }
@@ -64,7 +64,7 @@ header .navbar ul li ul {
   position: absolute;
   left: 0;
   width: 150px;
-  background: #fddc6a;
+  background: #f0bdfc;
   display: none;
 }
 
@@ -75,7 +75,7 @@ header .navbar ul li ul li {
 
 .alert-success {
   color: black;
-  background: #fddc6a;
+  background: #f0bdfc;
   border-color: black;
 }
 
@@ -147,7 +147,7 @@ text-align: center;
   height: 3px;
   width: 347px;
   border-radius: 5px;
-  background: #fddc6a;
+  background: #f0bdfc;
 }
 .content form .user-details{
   display: flex;
@@ -177,7 +177,7 @@ form .input-box span.details{
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid{
-  border-color: #f9b532;
+  border-color: #c499cf;
 }
 
  form .button{
@@ -195,11 +195,11 @@ form .input-box span.details{
    letter-spacing: 1px;
    cursor: pointer;
    transition: all 0.3s ease;
-   background: #f9b532;
+   background: #c499cf;
  }
  form .button input:hover{
   /* transform: scale(0.99); */
-  background: #fddc6a;
+  background: #c499cf;
   }
  @media(max-width: 584px){
  .container{
@@ -246,11 +246,10 @@ table {
   border-radius: 10px;
   width: 100%;
   margin: 0 auto;
- 
 }
 
 th {
-  background-color: #f9b532;
+  background-color: #f0bdfc;
   color: black;
   height: 61px;
 }
@@ -262,7 +261,7 @@ td {
 }
 
 tbody {
-  background-color: #fddc6a;
+  background-color: #f0bdfc;
   color: black;
 }
 

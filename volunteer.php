@@ -153,7 +153,7 @@ if (session_id() == "") {
 
 
     footer {
-      background-color: #fddc6a;
+      background-color: #f0bdfc;
       padding: 20px;
       padding-top: 30;
       text-align: center;
@@ -179,7 +179,7 @@ if (session_id() == "") {
   .title{
     text-shadow: 2px 2px #50390B;
     font-weight: 900;
-    color: #f9b532;
+    color: #f0bdfc;
     font-size: 3em;
   }
   @media screen and (max-width: 768px) {
@@ -208,7 +208,7 @@ if (session_id() == "") {
       Consider volunteering at our local animal shelter, <b>Sweet Pets Haven!</b> </p><br><br><br>
       <hr>
       <div class="left-container extra-margin">
-      <h3 style = "color: #FFA32C;"> <b><br><br>🐱 Help Us So That We Can Help Them 🐶 </b> </h3>
+      <h3 style = "color: #f0bdfc;"> <b><br><br>🐱 Help Us So That We Can Help Them 🐶 </b> </h3>
       <h4> Some of the tasks you may be involved in include: </h4> 
       <br>
         <p>• Walking dogs and providing them with exercise and attention</p>
@@ -245,7 +245,7 @@ if (session_id() == "") {
 
 
       <div class="right-container2 extra-margin">
-        <h3 style = "color: #FFA32C;"> <b>Join our paw-some team and make a furry difference! 🐾</b> </h3>
+        <h3 style = "color: #f0bdfc;"> <b>Join our paw-some team and make a furry difference! 🐾</b> </h3>
         <br>
         <p style = "text-align: justify;" >No prior experience is necessary - we will provide you with all the training and support you need to succeed in your role. All we ask is that you are reliable, committed, and passionate about animal welfare.</p>
         <p style = "text-align: justify;">Volunteering at our animal shelter is not only a rewarding way to help animals in need, but it's also a great way to meet like-minded people and make new friends. Plus, you'll get plenty of snuggles and kisses from our furry friends!</p>
@@ -261,7 +261,7 @@ if (session_id() == "") {
     <div class="container">
       
       <div class="left-container3 extra-margin">
-      <h3 style = "color: #FFA32C;"> <b>How to become a Volunteer </b> </h3>
+      <h3 style = "color: #f0bdfc;"> <b>How to become a Volunteer </b> </h3>
         <br>
 
         <h3>❶ APPLY ONLINE</h3>

@@ -27,6 +27,7 @@ if (!isset($_SESSION['admin'])) {
   <title>Our Animals</title>
   <link rel="stylesheet" href="style3.css">
   <link rel="stylesheet" href="animal-style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@ if (!isset($_SESSION['admin'])) {
   <br><br>
 
   <center>
-    <h1 class="align-items-center; " style = "text-shadow: 2px 2px #50390B; font-size:4vw; font-weight: 900; color: #f9b532;"><b>Pets for Adoption</b></h1>
+    <h1 class="align-items-center; " style = "text-shadow: 2px 2px #50390B; font-size:4vw; font-weight: 900; color: #f0bdfc;"><b>Pets for Adoption</b></h1>
    
     <p style = "margin: 0% 15%; line-height: 30px;">At Sweet Pets Haven, we have a variety of lovable pets waiting for their forever homes. Our animals come in all shapes and sizes, from playful kittens and puppies to senior dogs and cats in need of a cozy retirement home. </br></br>
 

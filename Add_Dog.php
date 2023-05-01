@@ -27,6 +27,7 @@ include('process-dog.php');
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Our Animals</title>
     <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="animal-style.css">
     <link rel="stylesheet" href="adopt.css" />
 </head>

@@ -63,15 +63,14 @@ if (isset($_POST['submit'])) {
             ->orderByChild('pet_id')
             ->equalTo($id)
             ->getValue();
-        $alert = "";
+
         if ($fetch_data > 0) {
             foreach ($fetch_data as $key => $row) {
                 if ($row['date'] == $date) {
                     $alert = "Please choose a different date!";
                     break;
                 }
-                if ($alert != "")
-                    $alert = "";
+
             }
         }
         if (!isset($alert)) {

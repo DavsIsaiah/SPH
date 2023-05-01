@@ -28,7 +28,7 @@ if (session_id() == "") {
   h1.name {
     font-size: 4vw;
     font-weight: 900;
-    color: #f9b532;
+    color: #c499cf;
     text-shadow: 2px 2px #50390B;
     padding: 2%;
   }

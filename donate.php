@@ -86,7 +86,7 @@ if (session_id() == "") {
     }
 
     .container-2{
-      background-color: #fddc6a;
+      background-color: #f0bdfc;
       margin-top: 40px;
       display: flex;
       flex-wrap: wrap;
@@ -125,7 +125,7 @@ if (session_id() == "") {
   }
 }
 .half-round{
-  background-color: #fddc6a;
+  background-color: #f0bdfc;
   border-radius: 50px 50px 0px 0px;
   margin-bottom: -50px;
   padding: 20 20 20 20;
@@ -136,7 +136,7 @@ if (session_id() == "") {
   bottom: 20px;
   right: 20px;
   z-index: 9999;
-  background-color: #F0B059;
+  background-color:  #c499cf;
   color: white;
   padding: 15px 20px;
   border: none;
@@ -154,7 +154,7 @@ if (session_id() == "") {
 
 .pop-text{
   text-shadow: 2px 2px #50390B;
-  font-weight: 900; color: #f9b532;
+  font-weight: 900; color: #f0bdfc;
   font-size: 3em;
 }
 
@@ -162,7 +162,7 @@ if (session_id() == "") {
 @media screen and (max-width: 768px) {
     .pop-text{
     text-shadow: 2px 2px #50390B;
-    font-weight: 900; color: #f9b532;
+    font-weight: 900; color: #f0bdfc;
     font-size: 2em;
   }
 }

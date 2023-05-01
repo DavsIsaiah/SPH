@@ -60,12 +60,12 @@ if (isset($_POST['content'])) {
   }
 
   .description {
-    background-color: #fddc6a;
+    background-color: #c7f0ef;
     border-radius: 30px;
   }
 
   .testibg {
-    background-color: #ffeba1;
+    background-color: #c7f0ef;
   }
 
   .announcement-img {

@@ -112,10 +112,77 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     rel="stylesheet" />
   <title>Volunteer</title>
   <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <style>
+.container .form_title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .form_title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 347px;
+  border-radius: 5px;
+  background: #f0bdfc;
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #c499cf;
+}
 
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: #c499cf;
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: #c499cf;
+  }
 </style>
 
 <body>
@@ -124,7 +191,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <div class="container title">
     <h1 class="text-center " style="text-shadow: 1px 1px 4px #000; font-size: 40px;"><strong>VOLUNTEER</strong></h1>
     <h1 class="text-center " style="text-shadow: 1px 1px 4px #000; font-size: 40px;"><strong>APPLICATION</strong></h1>
-    <h1 class="text-center " style="text-shadow: 1px 1px 4px #000;font-size: 40px; color:#fddc6a;"><strong>FORM</strong>
+    <h1 class="text-center " style="text-shadow: 1px 1px 4px #000;font-size: 40px; color:#c499cf;"><strong>FORM</strong>
     </h1>
   </div>
 
@@ -161,7 +228,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
           <div class="input-box">
             <span class="details">Volunteer Date</span>
-            <select id="volunteer_date" name="volunteer_date" style="border:solid 1px #f9b532;" required>
+            <select id="volunteer_date" name="volunteer_date" style="border:solid 1px #c499cf;" required>
               <option>Select a date</option>
               <?php
               require __DIR__ . '/vendor/autoload.php';

@@ -25,10 +25,19 @@ if (!isset($_SESSION["user"])) {
     rel="stylesheet" />
   <title>My Forms</title>
   <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <style>
-
+th {
+  background-color: #f0bdfc;
+  color: black;
+  height: 61px;
+}
+tbody {
+  background-color: #c499cf;
+  color: black;
+}
 </style>
 
 <body>
@@ -39,7 +48,7 @@ if (!isset($_SESSION["user"])) {
       <h1 class="text-center" style="text-shadow: 1px 1px 4px #000;  font-size: 40px;">
         <strong> Adoption</strong>
       </h1>
-      <h1 class="text-center" style="text-shadow: 1px 1px 4px #000;  font-size: 40px; color:#fddc6a">
+      <h1 class="text-center" style="text-shadow: 1px 1px 4px #000;  font-size: 40px; color:#f0bdfc">
         <strong> Appointments</strong>
       </h1>
     </section>
@@ -100,7 +109,7 @@ if (!isset($_SESSION["user"])) {
         <h1 class="text-center" style="text-shadow: 1px 1px 4px #000;  font-size: 40px;">
           <strong> Volunteer</strong>
         </h1>
-        <h1 class="text-center" style="text-shadow: 1px 1px 4px #000;  font-size: 40px; color:#fddc6a">
+        <h1 class="text-center" style="text-shadow: 1px 1px 4px #000;  font-size: 40px; color:#f0bdfc">
           <strong> Schedule</strong>
         </h1>
       </section>

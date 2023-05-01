@@ -19,6 +19,7 @@ if (session_id() == "") {
   <title>Our Animals | Sweet Pets Haven</title>
   <link rel="stylesheet" href="style3.css">
   <link rel="stylesheet" href="animal-style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <style>
@@ -28,7 +29,7 @@ if (session_id() == "") {
 .align-items-center{
   text-shadow: 2px 2px #50390B;
   font-weight: 900;
-  color: #f9b532;
+  color: #f0bdfc;
   font-size: 3.5em;
 }
 @media screen and (max-width: 768px) {

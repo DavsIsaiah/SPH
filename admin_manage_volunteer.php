@@ -61,6 +61,7 @@ if (isset($_POST['delete'])) {
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Manage Volunteers</title>
   <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <style>
@@ -81,13 +82,22 @@ if (isset($_POST['delete'])) {
   }
 
   .btn {
-    background-color: blue;
-    color: white;
+    background-color: #f0bdfc;
+    color: black;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
+  th {
+  background-color: #f0bdfc;
+  color: black;
+  height: 61px;
+}
+tbody {
+  background-color: #c499cf;
+  color: black;
+}
 </style>
 
 <body>

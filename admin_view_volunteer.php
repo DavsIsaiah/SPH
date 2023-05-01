@@ -48,6 +48,7 @@ if (isset($_POST['deny'])) {
     rel="stylesheet" />
   <title>Volunteer</title>
   <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 

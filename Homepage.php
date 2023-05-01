@@ -49,14 +49,14 @@ body{
 }
 .pop-text{
   text-shadow: 2px 2px #50390B;
-  font-weight: 900; color: #f9b532;
+  font-weight: 900; color: #f0bdfc;
   font-size: 3.5em;
   padding: 10 10 10 10;
   text-align: center;
 }
 
 .yellow-container{
-  background-color: #FFDE7E;
+  background-color: #f0bdfc;
   padding: 20px;
   width: 500px;
   border-radius: 50px;
@@ -82,7 +82,7 @@ body{
 @media screen and (max-width: 768px) {
   .pop-text{
     text-shadow: 2px 2px #50390B;
-    font-weight: 900; color: #f9b532;
+    font-weight: 900; color: #f0bdfc;
     font-size: 2em;
   }
   body{
@@ -109,8 +109,8 @@ body{
 
 <body>
 <?php require_once('header.php');?>
-<img src="img/header2.png" class="header">
-<img src="img/header1.png" class = "header-m">
+<img src="header.png" class="header">
+<img src="header1.png" class = "header-m">
 
 
 <h1 class="pop-text">Sweet Pets Haven</h1>
