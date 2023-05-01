@@ -19,10 +19,10 @@ if (isset($_POST['submit'])) {
         $err = "Invalid format for mobile number";
     }
     if(!preg_match('/^[a-zA-Z\s]+$/', $fname)){
-        $err = "Invalid format for fname";
+        $err = "Invalid format for first name";
     }
     if(!preg_match('/^[a-zA-Z\s]+$/', $lname)){
-        $err = "Invalid format for lname";
+        $err = "Invalid format for last name";
     }
 
 

@@ -21,7 +21,8 @@ if (isset($_POST['add'])) {
       'date' => $_POST['date']
     ];
     $database->getReference($ref_table)->push($postData);
-    header("Location: admin_manage_volunteer.php");
+    echo '<script>window.location = "admin_manage_volunteer.php";</script>';
+
   }
 }
 if (isset($_POST['delete'])) {
@@ -31,7 +32,8 @@ if (isset($_POST['delete'])) {
     foreach ($fetch_data as $key => $row) {
       if ($row['date'] == $_POST['date']) {
         $database->getReference("$ref_table/$key")->remove();
-        header("Location: admin_manage_volunteer.php");
+        echo '<script>window.location = "admin_manage_volunteer.php";</script>';
+
       }
     }
     echo "<script>alert('Date cannot be found!')</script>";
@@ -97,9 +99,7 @@ if (isset($_POST['delete'])) {
   <div class="input-box" id="volunteer-date">
     <form method="post">
       <h5 for="date">Add or Delete Dates:</h5>
-      <input type="date" id="date" name="date" min="<?php
-      echo date('Y-m-d');
-      ?>"> &nbsp;
+      <input type="date" id="date" name="date"> &nbsp;
       <button type="submit" name="add"><i class="material-icons" style="font-size:19px">add_circle</i></button>
       <button type="submit" name="delete"><i class="material-icons" style="font-size:19px">delete_forever</i></button>
     </form>
@@ -107,7 +107,6 @@ if (isset($_POST['delete'])) {
     <h5 for="dates">Available Dates:</h5>
     <select id="dates">
       <?php
-
       $ref_table = "volunteer_dates";
       $fetch_data = $database->getReference($ref_table)->getValue();
       if ($fetch_data > 0) {

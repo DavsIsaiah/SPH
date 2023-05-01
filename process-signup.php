@@ -16,10 +16,10 @@ if (isset($_POST['submit'])) {
     $fetch_data = $database->getReference($ref_table)->getValue();
     $err = "";
     if(!preg_match('/^[a-zA-Z\s]+$/', $fname)){
-        $err = "Invalid format for fname";
+        $err = "Invalid format for first name";
     }
     if(!preg_match('/^[a-zA-Z\s]+$/', $lname)){
-        $err = "Invalid format for lname";
+        $err = "Invalid format for last name";
     }
     //Verification
     if (preg_match('/^[0-9]{11}+$/', $mobile)) {
