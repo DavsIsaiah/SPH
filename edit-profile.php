@@ -4,8 +4,8 @@ if (session_id() == "") {
     session_start();
 }
 if (!isset($_SESSION["user"])) {
-    echo '<script>alert("You are not allowed here.");</script>';
-    header("location:Homepage.php");
+    echo '<script>alert("You are not allowed here.");
+    window.location = "Homepage.php";</script>';
 }
 ?>
 

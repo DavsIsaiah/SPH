@@ -68,9 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       }
     }
   }
-
-  header("Location: Announcements_admin.php");
-
+  echo "<script>window.location = 'Announcements_admin.php';</script>";
 }
 
 ?>

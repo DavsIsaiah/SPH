@@ -64,7 +64,7 @@ if (isset($_POST['submit'])) {
             $_SESSION['email'] = $email;
             $_SESSION['fname'] = $fname;
             $_SESSION['lname'] = $lname;
-            header("Location: Homepage.php");
+            echo "<script>window.location = 'Homepage.php';</script>";
         } else {
             echo "<script>alert('$err');</script>";
         }

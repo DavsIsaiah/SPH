@@ -48,7 +48,7 @@ if (isset($_POST['submit'])) {
                 //edits the value in the database
                 $ref_table = "$ref_table/" . $keys;
                 $database->getReference($ref_table)->update($updateData);
-                header("Location: animals_admin.php");
+                echo "<script>window.location = 'animals_admin.php';</script>";
             } else {
                 echo "<script>alert('$err');</script>";
             }

@@ -13,9 +13,9 @@ if (isset($_POST['submit'])) {
     //Verification
     $fetch_data = $database->getReference($ref_table)->getValue();
     if (gettype($fetch_data) == "string") {
-        
+
     } else {
-        
+
         foreach ($fetch_data as $key => $row) {
             //pass the value to the session variables.
             if ($row['user'] == "$user" && $row['pass'] == "$pass") {
@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
                 $_SESSION['mobile'] = $row['mobile'];
                 if (isset($row['admin']))
                     $_SESSION['admin'] = $row['admin'];
-                header("Location: Homepage.php");
+                echo "<script>window.location = 'Homepage.php';</script>";
             }
         }
     }

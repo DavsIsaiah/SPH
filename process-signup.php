@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
             ]; //this is the schema
             $ref_table = "cred";
             $database->getReference($ref_table)->push($postData);
-            header("Location: Homepage.php");
+            echo "<script>window.location = 'Homepage.php';</script>";
         } else {
             echo "<script>alert('$err');</script>";
         }
