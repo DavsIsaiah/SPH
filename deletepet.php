@@ -43,5 +43,8 @@ $trim = str_replace("https://firebasestorage.googleapis.com/v0/b/safepetshaven.a
 $trim2 = str_replace("?alt=media", "", "$trim");
 echo $trim2;
 $bucket->object($trim2)->delete();
-header("Location: animals_admin.php");
+
+echo '<script>
+      window.location = "animals_admin.php";
+      </script>';
 ?>

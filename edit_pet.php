@@ -140,31 +140,6 @@ require('./process-edit-pet.php');
     </div>
     <br><br>
     <br>
-    <div style="">
-        <h2 class="h2">
-            <li><span class='Magnifying-Glass fontawesomeicon' style="color:#ffffff"></span>ADOPTION FAQS</li>
-
-        </h2>
-        <br>
-        <ul style="list-style-type: none; display: flex; flex-wrap: wrap; justify-content: space-evenly;">
-            <li>
-                <h3>Question 1</h3>
-                <p>Answer 1</p>
-            </li>
-            <li>
-                <h3>Question 2</h3>
-                <p>Answer 2</p>
-            </li>
-            <li>
-                <h3>Question 3</h3>
-                <p>Answer 3</p>
-            </li>
-            <li>
-                <h3>Question 4</h3>
-                <p>Answer 4</p>
-            </li>
-        </ul>
-    </div>
     <script>
         $('.delete').click(function () { return confirm("are you sure?"); });
     </script>
