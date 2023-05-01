@@ -26,7 +26,6 @@ if (isset($_POST['submit'])) {
         $breed = $_POST['breed'];
         $age = $_POST['age'];
         $sex = $_POST['sex'];
-        $spayed = $_POST['spayed'];
         $date = $_POST['date'];
         $postData = [
             'pet_id' => $id,
@@ -34,7 +33,6 @@ if (isset($_POST['submit'])) {
             'breed' => $breed,
             'age' => $age,
             'sex' => $sex,
-            'spayed' => $spayed,
             'date' => $date,
             'user' => $_SESSION['user'],
             'cat' => $_SESSION['cat'],
@@ -65,6 +63,7 @@ if (isset($_POST['submit'])) {
             ->orderByChild('pet_id')
             ->equalTo($id)
             ->getValue();
+        $alert = "";
         if ($fetch_data > 0) {
             foreach ($fetch_data as $key => $row) {
                 if ($row['date'] == $date) {
