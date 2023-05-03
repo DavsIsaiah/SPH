@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', '0');
 if (session_id() == "") {
   session_start();
 }
@@ -140,12 +142,12 @@ if (isset($_POST['submit'])) {
                     ?>
                     <label for="title" class="form-label">Event Title</label>
                     <input class="form-control mb-3" type="text" id="title" name="title"
-                      value="<?php echo $row['name']; ?>">
+                      value="<?php echo $row['name']; ?>" required>
                     <div class="mb-3">
                       <label for="description" class="form-label">Description</label>
                       <div class="">
                         <textarea class="form-control" name="description" id="description" rows="5" style="resize: none;"
-                          value="<?php echo $row['description']; ?>"><?php echo $row['description']; ?></textarea>
+                          value="<?php echo $row['description']; ?>" required><?php echo $row['description']; ?></textarea>
                         <label class="form-label mt-4">Delete uploaded images</label>
                         <div class="text-center">
                           <!--Loop through event images to display thumbnails of picture_link connected to event_id-->

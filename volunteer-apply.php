@@ -6,7 +6,7 @@ if (!isset($_SESSION['user'])) {
   session_destroy();
   echo "<script>
   alert('You cannot volunteer when not logged in.');
-  window.location = 'Homepage.php';
+  window.location = 'volunteer.php';
   </script>";
 }
 
@@ -229,7 +229,7 @@ form .input-box span.details{
           <div class="input-box">
             <span class="details">Volunteer Date</span>
             <select id="volunteer_date" name="volunteer_date" style="border:solid 1px #c499cf;" required>
-              <option>Select a date</option>
+              <option disabled selected>Select a date</option>
               <?php
               require __DIR__ . '/vendor/autoload.php';
               include('connection.php');

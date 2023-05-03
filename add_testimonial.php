@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', '0');
 if (session_id() == "") {
   session_start();
 }
@@ -157,13 +159,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data">
                   <div class="mb-3">
                     <label for="title" class="form-label">Testimonial Title</label>
-                    <input class="form-control mb-3" type="text" id="title" name="title" value="">
+                    <input class="form-control mb-3" type="text" id="title" name="title" value="" required>
                     <label for="aut" class="form-label">Author</label>
-                    <input class="form-control mb-3" type="text" id="aut" name="author" value="">
+                    <input class="form-control mb-3" type="text" id="aut" name="author" value="" required>
                     <label for="description" class="form-label">Description</label>
                     <div class="">
                       <textarea class="form-control" name="description" id="description" rows="5"
-                        style="resize: none;"></textarea>
+                        style="resize: none;" required></textarea>
                       <div class="mt-3">
                         <label for="formFileMultiple" class="form-label">Upload images</label>
                         <input type="file" class="form-control" id="formFileMultiple" name="files[]" accept="image/*"

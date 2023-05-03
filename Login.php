@@ -32,7 +32,7 @@ if (isset($_SESSION["user"])) {
 </style>
 
 <body>
-<?php require_once('header.php');?>
+    <?php require_once('header.php'); ?>
 
     <div class="d-flex min-vh-100 justify-content-center align-items-center">
         <div class="shadow-sm mx-2 border rounded p-5">
@@ -62,7 +62,7 @@ if (isset($_SESSION["user"])) {
                     Login
                 </button>
                 <small class="d-block mt-3">
-                    <a href="signup.php" class="text-muted">Sign Up</a>
+                    <a href="Signup.php" class="text-muted">Sign Up</a>
                 </small>
             </form>
         </div>
@@ -70,7 +70,9 @@ if (isset($_SESSION["user"])) {
 
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

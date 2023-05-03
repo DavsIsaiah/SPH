@@ -4,8 +4,9 @@ if (session_id() == "") {
     session_start();
 }
 if (isset($_SESSION["user"])) {
-    echo '<script>alert("You are already logged in.");</script>';
-    header("location:Homepage.php");
+    echo '<script>alert("You are already logged in.");
+    window.location = "Homepage.php";</script>';
+
 }
 ?>
 
@@ -30,7 +31,7 @@ if (isset($_SESSION["user"])) {
 </style>
 
 <body>
-<?php require_once('header.php');?>
+    <?php require_once('header.php'); ?>
     <div class="d-flex min-vh-100 justify-content-center align-items-center">
         <div class="shadow-sm mx-2 border rounded p-5">
             <h3>Create an Account</h3>
@@ -65,8 +66,8 @@ if (isset($_SESSION["user"])) {
                         <label for="uinput6" class="mt-3 mb-1 text-muted">
                             Mobile Number
                         </label>
-                        <input id="uinput6" type="text" name="mobile" class="form-control" value="<?php echo $mobile; ?>"
-                            required />
+                        <input id="uinput6" type="text" name="mobile" class="form-control"
+                            value="<?php echo $mobile; ?>" required />
                     </div>
                 </div>
                 <button name="submit" type="submit" class="mt-2 w-100">
@@ -81,7 +82,9 @@ if (isset($_SESSION["user"])) {
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>   
 </body>
 
 </html>
