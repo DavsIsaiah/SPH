@@ -69,6 +69,7 @@ require('./process-edit-pet.php');
                 break;
             }
         }
+        $comp = preg_split('/\s+/', $age);
 
     }
     ?>
@@ -104,13 +105,26 @@ require('./process-edit-pet.php');
                         <label for="lname" class="mt-3 mb-1 text-muted">
                             AGE
                         </label>
-                        <input id="lname" type="text" name="age" class="form-control" value="<?php echo $age ?>"
-                            required />
-                        <label for="email" class="mt-3 mb-1 text-muted">
+                        <input id="lname" type="number" name="age" min="1" class="form-control"
+                            value="<?php echo $comp[0] ?>" required />
+                        <label for="date" class="mt-3 mb-1 text-muted">
+                            Years/Months
+                        </label>
+                        <select id="date" name="date" required class="form-control">
+                            <option value="Years" <?php if ($comp[1] == "Years")
+                                echo "selected"; ?>>Years</option>
+                            <option value="Months" <?php if ($comp[1] == "Months")
+                                echo "selected"; ?>>Months</option>
+                        </select>
+                        <label for="sex" class="mt-3 mb-1 text-muted">
                             SEX
                         </label>
-                        <input id="email" type="text" name="sex" class="form-control" value="<?php echo $sex ?>"
-                            required />
+                        <select id="sex" name="sex" required class="form-control">
+                            <option value="Male" <?php if ($sex == "Male")
+                                echo "selected"; ?>>Male</option>
+                            <option value="Female" <?php if ($sex == "Female")
+                                echo "selected"; ?>>Female</option>
+                        </select>
                         <label for="status" class="mt-3 mb-1 text-muted">
                             STATUS
                         </label>

@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', '0');
 if (session_id() == "") {
     session_start();
 }
@@ -36,6 +38,7 @@ if (isset($_POST['submit'])) {
                     $keys = $key;
                 }
             }
+            $age = $_POST['age'] . " " . $_POST['date'];
             $updateData = [
                 'pet_id' => $id,
                 'name' => $name,
