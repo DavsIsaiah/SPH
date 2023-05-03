@@ -166,7 +166,7 @@ if (isset($_POST['submit'])) {
                               <div class="mb-3">
                                 <img src="<?php echo $row2['picture_link'] ?>" class="img-thumbnail">
                                 <a class="btn btn-danger" type="button"
-                                  href="delete_image_testi.php?key=<?php echo $key2 ?>">Delete</a>
+                                  href="delete_image_testimonial.php?key=<?php echo $key2 ?>">Delete</a>
                               </div>
                               <?php
                             }
