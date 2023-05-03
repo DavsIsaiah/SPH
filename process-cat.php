@@ -43,7 +43,6 @@ if (isset($_POST['submit'])) {
                 $ref_table = "cat_images";
                 $fetch_data = $database->getReference($ref_table)
                     ->orderByChild('pet_id')
-                    ->limitToLast(1)
                     ->getValue();
 
                 if ($fetch_data > 0) {

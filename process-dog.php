@@ -44,7 +44,6 @@ if (isset($_POST['submit'])) {
                 $ref_table = "dog_images";
                 $fetch_data = $database->getReference($ref_table)
                     ->orderByChild('pet_id')
-                    ->limitToLast(1)
                     ->getValue();
                 if ($fetch_data > 0) {
                     foreach ($fetch_data as $key => $row) {
@@ -54,6 +53,7 @@ if (isset($_POST['submit'])) {
                     $pet_id = 1;
                 }
                 //pass to the firebase database.
+                echo $pet_id;
                 $age = $_POST['age'] . " " . $_POST['date'];
                 $postData = [
                     'age' => $age,
