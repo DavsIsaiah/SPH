@@ -2,6 +2,13 @@
 if (session_id() == "") {
   session_start();
 }
+if (!isset($_SESSION['user'])) {
+  session_destroy();
+  echo "<script>
+  alert('You cannot adopt when not logged in.');
+  window.location = 'animals.php';
+  </script>";
+}
 require('./process-adopt.php');
 ?>
 
@@ -11,7 +18,7 @@ require('./process-adopt.php');
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Animals</title>
+  <title>Adopt Form | Sweet Pets Haven</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap"
@@ -118,15 +125,21 @@ require('./process-adopt.php');
             <label for="legal_name" class="mt-3 mb-1 text-muted">
               Full Legal Name
             </label>
-            <input id="legal_name" type="text" name="legal_name" class="form-control" value="<?php if(isset($_POST['legal_name'])) echo $_POST['legal_name'];?>" required />
+            <input id="legal_name" type="text" name="legal_name" class="form-control"
+              value="<?php if (isset($_POST['legal_name']))
+                echo $_POST['legal_name']; ?>" required />
             <label for="Address" class="mt-3 mb-1 text-muted">
               Complete Address
             </label>
-            <input id="Address" type="text" name="Address" class="form-control" value="<?php if(isset($_POST['Address'])) echo $_POST['Address'];?>" required />
+            <input id="Address" type="text" name="Address" class="form-control"
+              value="<?php if (isset($_POST['Address']))
+                echo $_POST['Address']; ?>" required />
             <label for="Facebook" class="mt-3 mb-1 text-muted">
               Facebook Profile Name
             </label>
-            <input id="Facebook" type="text" name="Facebook" class="form-control" value="<?php if(isset($_POST['Facebook'])) echo $_POST['Facebook'];?>" required />
+            <input id="Facebook" type="text" name="Facebook" class="form-control"
+              value="<?php if (isset($_POST['Facebook']))
+                echo $_POST['Facebook']; ?>" required />
             <label class="mt-3 mb-1 text-muted">
               Home Ownership
             </label><br>
@@ -139,7 +152,9 @@ require('./process-adopt.php');
             <label for="length" class="mt-3 mb-1 text-muted">
               For how long have you been living in your home?
             </label>
-            <input id="length" type="text" name="length" class="form-control" value="<?php if(isset($_POST['length'])) echo $_POST['length'];?>" required />
+            <input id="length" type="text" name="length" class="form-control"
+              value="<?php if (isset($_POST['length']))
+                echo $_POST['length']; ?>" required />
             <label class="mt-3 mb-1 text-muted">
               Does your landlord/landlady allow pets?
             </label><br>
@@ -150,11 +165,15 @@ require('./process-adopt.php');
             <label for="adults" class="mt-3 mb-1 text-muted">
               How many Adults are in the household?
             </label>
-            <input id="adults" type="number" name="adults" class="form-control" value="<?php if(isset($_POST['adults'])) echo $_POST['adults'];?>" required />
+            <input id="adults" type="number" name="adults" class="form-control"
+              value="<?php if (isset($_POST['adults']))
+                echo $_POST['adults']; ?>" required />
             <label for="child" class="mt-3 mb-1 text-muted">
               How many Children are in the household?
             </label>
-            <input id="child" type="number" name="child" class="form-control" value="<?php if(isset($_POST['child'])) echo $_POST['child'];?>" required />
+            <input id="child" type="number" name="child" class="form-control"
+              value="<?php if (isset($_POST['child']))
+                echo $_POST['child']; ?>" required />
             <label class="mt-3 mb-1 text-muted">
               Are all members of the family supportive of this adoption?
             </label><br>
@@ -179,7 +198,9 @@ require('./process-adopt.php');
             <label for="responsible" class="mt-3 mb-1 text-muted">
               Who will be responsible for the pet's care
             </label>
-            <input id="responsible" type="text" name="responsible" class="form-control" value="<?php if(isset($_POST['responsible'])) echo $_POST['responsible'];?>" required />
+            <input id="responsible" type="text" name="responsible" class="form-control"
+              value="<?php if (isset($_POST['responsible']))
+                echo $_POST['responsible']; ?>" required />
             <label class="mt-3 mb-1 text-muted">
               What is your Source of Income
             </label><br>
@@ -196,7 +217,9 @@ require('./process-adopt.php');
             <label for="return" class="mt-3 mb-1 text-muted">
               If you will return an animal, what would be the reason?
             </label>
-            <input id="return" type="text" name="return" class="form-control" value="<?php if(isset($_POST['return'])) echo $_POST['return'];?>" required />
+            <input id="return" type="text" name="return" class="form-control"
+              value="<?php if (isset($_POST['return']))
+                echo $_POST['return']; ?>" required />
             <label class="mt-3 mb-1 text-muted">
               Do you plan to give this dog/cat as a gift?
             </label><br>
@@ -214,19 +237,27 @@ require('./process-adopt.php');
             <label for="kept" class="mt-3 mb-1 text-muted">
               Where will the pet be kept during the day or night? (i.e. indoors, outside, yard, cage, etc.)
             </label>
-            <input id="kept" type="text" name="kept" class="form-control" value="<?php if(isset($_POST['kept'])) echo $_POST['kept'];?>" required />
+            <input id="kept" type="text" name="kept" class="form-control"
+              value="<?php if (isset($_POST['kept']))
+                echo $_POST['kept']; ?>" required />
             <label for="food" class="mt-3 mb-1 text-muted">
               What type of food do you plan to feed the pet?
             </label>
-            <input id="food" type="text" name="food" class="form-control" value="<?php if(isset($_POST['food'])) echo $_POST['food'];?>" required />
+            <input id="food" type="text" name="food" class="form-control"
+              value="<?php if (isset($_POST['food']))
+                echo $_POST['food']; ?>" required />
             <label for="vet" class="mt-3 mb-1 text-muted">
               Who is your veterinarian?
             </label>
-            <input id="vet" type="text" name="vet" class="form-control" value="<?php if(isset($_POST['vet'])) echo $_POST['vet'];?>" required />
+            <input id="vet" type="text" name="vet" class="form-control"
+              value="<?php if (isset($_POST['vet']))
+                echo $_POST['vet']; ?>" required />
             <label for="reason" class="mt-3 mb-1 text-muted">
               Please state a brief reason/s for wanting to adopt this pet:
             </label>
-            <input id="reason" type="text" name="reason" class="form-control" value="<?php if(isset($_POST['reason'])) echo $_POST['reason'];?>" required />
+            <input id="reason" type="text" name="reason" class="form-control"
+              value="<?php if (isset($_POST['reason']))
+                echo $_POST['reason']; ?>" required />
             <label for="date" class="form-label">Preferred Interview Date</label>
             <input type="date" class="form-control" id="date" name="date" min="<?php
             echo date('Y-m-d');
@@ -244,6 +275,11 @@ require('./process-adopt.php');
   </div>
   <br><br>
   <br>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
