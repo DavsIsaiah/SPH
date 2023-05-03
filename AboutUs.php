@@ -22,16 +22,189 @@ if (session_id() == "") {
 
 <style>
 
-     /* Set the container to be a flexbox */
-     .container {
-      margin-top: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width:65%;
+
+    .pop-text{
+  text-shadow: 2px 2px #50390B;
+  font-weight: 900; color: #f0bdfc;
+  font-size: 3em;
+  margin-top: 1em;
+}
+
+    
+* {
+  box-sizing: border-box;
+}
+
+
+ h1.sph{
+  font-size: 2em;
+    color: black;
+    font-weight: 500;
+ }
+
+
+ .flex-container{
+    padding: 5% 5%; 
+    display: flex;
+  }
+
+  .item{
+    float: left;
+    margin: 0% 5%;
+  }
+
+  .history{
+    float: left;
+    font-size: 1.7vw;
+    text-align: justify;
+    line-height: 40px;
+  }
+
+  .flex-container1 {
+    padding: 3% 3%; 
+    display: flex;
+    background-color: #f0bdfc;
+    margin: 0%;
+  }
+
+  .flex-child{
+    flex: 1;
+    margin: 0% 15%;
+  }
+
+  .flex-child-img{
+    float: left;
+    width: 20%;
+  }
+
+  .flex-child-title{
+    float: left;
+    font-size:3vw;
+    font-weight: 700;
+    width: 30%;
+    padding: 2%;
+  }
+
+  .flex-child-text{
+    float: left;
+    font-size:1.2em;
+    text-align: justify;
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 992px) {
+    .pop-text{
+    text-shadow: 2px 2px #50390B;
+    font-weight: 900; color: #f0bdfc;
+    font-size: 3em;
     }
 
-    .hidden{
+    h1.sph{
+      font-size:2em;
+    }
+
+
+    p.history{
+      font-size:1.1em;
+    }
+
+    .flex-child-title{
+      font-size:3em;
+    }
+    .flex-child-text{
+      font-size:1.2em;
+    }
+
+  }
+
+  @media only screen and (max-width: 768px) {
+    .pop-text{
+    text-shadow: 2px 2px #50390B;
+    font-weight: 900; color: #f0bdfc;
+    font-size: 3em;
+    }
+
+    h1.sph{
+      font-size:2em;
+    }
+
+    p.history{
+      font-size:1.2em;
+      line-height: 30px;
+    }
+
+    img.history{
+      width:100%;
+    }
+
+    .flex-child-title{
+      font-size:2em;
+    }
+    .flex-child-text{
+      font-size:1.1em;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+
+    .pop-text{
+    text-shadow: 2px 2px #50390B;
+    font-weight: 900; color: #f0bdfc;
+    font-size: 3em;
+    }
+
+    h1.sph{
+      font-size:2em;
+    }
+
+  .flex-container{
+    padding: 5% 5%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .item{
+    margin: 0% 15%;
+    width: 80%;
+  }
+
+  .history{
+    padding: 2%;
+    margin: 2%;
+    text-align: justify;
+  }
+  p.history{
+    font-size:2em;
+  }
+
+  .flex-container1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .flex-child-img{
+    margin: 0% 17%;
+    width: 75%;
+
+  }
+
+  .flex-child-title{
+    margin: 0% 18%;
+    font-size:3em;
+    align-content: center;
+    width:100%;
+    
+  }
+
+  .flex-child-text{
+    margin: 0% 6% ;
+    width:100%;
+    font-size: 1.2em;
+  }
+ }
+
+ .hidden{
       opacity: 0;
       transform: translateY(20vh);
       visibility: hidden;
@@ -43,183 +216,51 @@ if (session_id() == "") {
       transform: none;
       visibility: visible;
     }
-    
-      /* Add extra margin when device is set to mobile */
-    @media (max-width: 768px) {
-        .extra-margin {
-        margin-bottom: 40px;
-      }
-    }
-    body{
-      font-size: 1.1em;
-    }
-    /* Set the width of the containers based on the device */
-    .left-container {
-      width: 100%;
-      
-    }
-    
-    @media only screen and (min-width: 768px) {
-      .left-container {
-        width: 60%;
-        padding: 5 5 5 5;
-      }
-    }
-    
-    .right-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
-    
-    @media only screen and (min-width: 768px) {
-      .right-container {
-        width: 40%;
-        padding: 5 5 5 5;
-      }
-    }
-    /* three columns */
-    .dog-img{
-      width:200px;
-      border-radius: 30px;
-      text-align: center;
-    }
-
-    .container-2{
-      background-color: #f0bdfc;
-      margin-top: 40px;
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-      padding: 10 10 10 10;
-    }
-
-/* Set the width of the columns based on the device */
-.left-column {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .left-column {
-    width: 15%;
-    padding: 10 10 10 10;
-  }
-}
-
-.center-column {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .center-column {
-    width: 15%;
-    padding: 10 10 10 10;
-  }
-}
-
-.right-column {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  .right-column {
-    width: 70%;
-    padding: 10 10 10 10;
-  }
-}
-.half-round{
-  background-color: #fddc6a;
-  border-radius: 50px 50px 0px 0px;
-  margin-bottom: -50px;
-  padding: 30 30 30 30;
-}
-
-
-.pop-text{
-  text-shadow: 2px 2px #50390B;
-  font-weight: 900; color: #f0bdfc;
-  font-size: 3em;
-}
-
-/* styles for mobile view */
-@media screen and (max-width: 768px) {
-    .pop-text{
-    text-shadow: 2px 2px #50390B;
-    font-weight: 900; color: #f0bdfc;
-    font-size: 2em;
-  }
-}
-.center{
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-.history{
-  margin: auto;
-  width:300px;
-  height:auto;
-}
 
 </style>
 
 <body>
 <?php require_once('header.php');?>
+  <center>
+  <h1 class="pop-text"><b>About us</b></h1>
+  <h1 class="sph">Sweet Pets Haven</p>
+  </center>
 
-<section class="hidden">
-  <div class="hidden">
-  <div class="center">
-    <h1 class="pop-text"><b>About us</b></h1>
-    <h2>Sweet Pets Haven</h2>
+  <section class = "hidden">
+  <div class = "flex-container">
+    <div class = "item">
+    <img src="img/hist.jpg" class ="history" style = " margin: 0;width:100%;height:auto;">
+    </div>
+
+    <div class = "history">
+    <p class = "history"> Sweet Pets Haven, a group of animal advocates headed by Ms. Joy Acosta, started in November 2021 with the goal of helping the strays by feeding them. They started to re-home strays and abused cats and dogs as their advocacy grew deeper. Started off with 28 dogs and 8 cats; and currently holding 180 dogs and 53 cats at the shelter in Trece Martirez Cavite. They are bound to transfer to a new shelter in Alfonso, Cavite. </p>
+    </div>
   </div>
-    <div class="container">
+</section>
 
-      <div class="left-container extra-margin">
+<section class = "hidden">
+<div class = "flex-container1">
+    <div class = "flex-child-img">
+    <img src="img/dog.png" style = "width:80%;height:auto;">
+    </div>
 
+    <div class = "flex-child-title">
+    <p>What We Do.</p>
+    </div>
+
+    <div class = "flex-child-text">
+    <p class = "text"> Sweet Pets Haven RESCUES, REHABILITATES and REHOMES animals such as stray dogs and cats. We provide temporary homes for rescued animals until they found a new family. We also ensure the health and safety of the animals by feeding them and treating them from viruses. SPH seeks help to rehabilitate and provide the needs of their cats and dogs such as food, medicine, and shelter from volunteers, donations, sponsors, and opening adoptions for the animals. </p>
+    </div>
+</div>
+</section>
   
-        <p style="text-align: justify;">Sweet Pets Haven, a group of animal advocates headed by Ms. Joy Acosta, started in November 2021 with the goal of helping the strays by feeding them.
-          They started to re-home strays and abused cats and dogs as their advocacy grew deeper.
-          Started off with 28 dogs and 8 cats; and currently holding 180 dogs and 53 cats at the shelter in Trece Martirez Cavite.
-          They are bound to transfer to a new shelter in Alfonso, Cavite.</p>
-      </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
-      <div class="right-container extra-margin">
-      <img src="img/hist.jpg" class ="history">
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hidden">
-  <div class="hidden">
-    <div class="container-2">
-      <div class="container">
-        <div class="left-column extra-margin">
-        <img src="img/dog.png" style = "width:80%;height:auto;">
-        </div>
-        <div class="center-column extra-margin">
-          <br>
-        <h3 style="text-align: center;"> <b>What We Do. </b> </h3>
-
-        </div>
-        <div class="right-column extra-margin" style="display: flex; justify-content: center; align-items: center;">
-        <p class = "text"> Sweet Pets Haven RESCUES, REHABILITATES and REHOMES animals such as stray dogs and cats.
-          We provide temporary homes for rescued animals until they found a new family.
-          We also ensure the health and safety of the animals by feeding them and treating them from viruses.
-          SPH seeks help to rehabilitate and provide the needs of their cats and dogs such as food,
-          medicine, and shelter from volunteers, donations, sponsors, and opening adoptions for the animals. </p>
-
-      
-        </div> 
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <script>
+    <script>
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           console.log(entry)
@@ -237,9 +278,6 @@ if (session_id() == "") {
 
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
