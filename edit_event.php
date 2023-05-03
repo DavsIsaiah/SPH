@@ -55,7 +55,9 @@ if (isset($_POST['submit'])) {
       }
     }
   }
-
+  echo '<script>alert("Successful Edit!");
+  window.location = "Announcements_admin.php";
+  </script>';
 }
 ?>
 
