@@ -67,6 +67,7 @@ if (isset($_POST['submit'])) {
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -161,7 +162,7 @@ if (isset($_POST['submit'])) {
                               ?>
                               <div class="mb-3">
                                 <img src="<?php echo $row2['picture_link'] ?>" class="img-thumbnail">
-                                <a class="btn btn-danger" type="button"
+                                <a class="btn btn-danger delete" type="button"
                                   href="delete_image_event.php?key=<?php echo $key2 ?>">Delete</a>
                               </div>
                               <?php
@@ -192,6 +193,9 @@ if (isset($_POST['submit'])) {
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+      <script>
+$('.delete').click(function () { return confirm("Are you sure you want to delete this image? The action is not reversible."); });
     </script>
 </body>
 
