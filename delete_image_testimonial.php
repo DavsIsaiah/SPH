@@ -9,7 +9,7 @@ if (!isset($_SESSION["admin"])) {
       </script>';
 }
 if (isset($_GET['key'])) {
-    $ref_table = "event_pic";
+    $ref_table = "testimonial_pic";
     require __DIR__ . '/vendor/autoload.php';
     include('connection.php');
     $key = $_GET['key'];
@@ -21,7 +21,7 @@ if (isset($_GET['key'])) {
         $bucket->object($trim2)->delete();
     }
     $database->getReference("$ref_table/$key")->remove();
-    header("Location: edit_event.php");
+    header("Location: edit_testimonial.php");
 }
 
 ?>
